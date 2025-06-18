@@ -1,0 +1,58 @@
+// * Goggle Fonts
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+// * Scss Imports
+
+@import './variables';
+@import './gobal';
+@import './mixin';
+@import './header';
+@import './home';
+@import './educations';
+@import './about-us';
+@import './top-educations';
+@import './contact-us';
+@import './footer';
+
+// * Css Reset
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  outline: none;
+  border: none;
+}
+
+a {
+  color:$text-color;
+}
+
+body {
+  font-family: "Open Sans", serif;
+  background-color: $bg-color;
+  color: $text-color;
+}
+
+.btn {
+  padding: 13px 40px;
+  display: inline-block;
+  background-color: $main-color;
+  font-style: 15px;
+  font-weight: 600;
+  border-radius: 5px;
+  border: 2px solid transparent;
+  @extend .transition;
+  &:hover{
+    border: 2px solid white;
+    background-color: transparent;
+    color: $text-color;
+    transform: translateX(10px);
+  }
+}
+
+section {
+  padding: 70px 17% 60px;
+}
